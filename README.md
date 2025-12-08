@@ -1,6 +1,6 @@
 # 🏦 Cloud-Native Zero Trust RAG
 
-A secure, role-based Retrieval-Augmented Generation (RAG) system built for **Goliath National Bank**. This application demonstrates how to build an enterprise-grade internal search tool using **AWS Bedrock**, **DynamoDB**, and **Streamlit**, with a strong focus on **Zero Trust security principles** and **PII protection**.
+A secure, role-based Retrieval-Augmented Generation (RAG) system built for an Enterprise (Here we name that as **Goliath National Bank**). This application demonstrates how to build an enterprise-grade internal search tool using **AWS Bedrock**, **DynamoDB**, and **Streamlit**, with a strong focus on **Zero Trust security principles** and **PII protection**.
 
 ---
 
