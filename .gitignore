@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+myenv/
+.env
+
+# MacOS
+.DS_Store
+
+# Local App Data (Do not push)
+local_users.json
+*.metadata.json

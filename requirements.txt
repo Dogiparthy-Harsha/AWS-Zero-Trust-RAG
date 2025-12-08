@@ -1,0 +1,4 @@
+boto3
+streamlit
+presidio-analyzer
+presidio-anonymizer
