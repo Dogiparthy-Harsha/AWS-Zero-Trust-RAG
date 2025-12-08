@@ -8,7 +8,8 @@ A secure, role-based Retrieval-Augmented Generation (RAG) system built for **Gol
 
 The system follows a cloud-native architecture leveraging AWS managed services for scalability and security.
 
-![Architecture Diagram](architecture.jpg)
+![Architecture Diagram](https://github.com/user-attachments/assets/922fbf98-9793-4d17-9f5b-61ccbd7a74bf)
+
 
 ### Key Components
 1.  **Ingestion Layer**: A Python script (`ingest_bedrock.py`) that reads local documents, scrubs PII using **Microsoft Presidio**, and uploads redacted content to **Amazon S3**.
@@ -24,11 +25,13 @@ The system follows a cloud-native architecture leveraging AWS managed services f
 
 ### Sequence Diagram
 Describes the flow of data from login to query retrieval, caching, and generation.
-![Sequence Diagram](sequence.png)
+![Sequence Diagram](https://github.com/user-attachments/assets/000c6d1a-8d3f-4f3c-801e-38bfcd2b0d46)
+)
 
 ### Use Case Diagram
 Outlines the primary interactions for Users (Employees) and HR Admins.
-![Use Case Diagram](use_case.png)
+![Use Case Diagram](https://github.com/user-attachments/assets/ae4df6c6-7679-4ea8-a303-0c99d0d0d07e)
+)
 
 ---
 
