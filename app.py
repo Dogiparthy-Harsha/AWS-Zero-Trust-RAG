@@ -76,6 +76,9 @@ def derive_role(employee_id):
     elif prefix == "hr": return "HR Manager"
     elif prefix == "ex": return "CFO"
     return None
+def hash_password(password):
+    """Converts a plain text password into a secure SHA-256 hash."""
+    return hashlib.sha256(password.encode()).hexdigest()
 
 def create_user(username, password, employee_id):
     role = derive_role(employee_id)
@@ -83,10 +86,12 @@ def create_user(username, password, employee_id):
     
     if 'Item' in user_table.get_item(Key={'username': username}):
         return False, "Username taken."
+    
+    secure_password = hash_password(password)
         
     user_table.put_item(Item={
         'username': username,
-        'password': password,
+        'password': secure_password,
         'employee_id': employee_id,
         'role': role,
         'history': []
@@ -102,6 +107,7 @@ def check_credentials(username, password):
         response = user_table.get_item(Key={'username': username})
         if 'Item' in response:
             user = response['Item']
+            input_hash = hash_password(password)
             if user['password'] == password:
                 return user['role'], user.get('history', []), user.get('employee_id', 'Unknown')
     except Exception as e:
