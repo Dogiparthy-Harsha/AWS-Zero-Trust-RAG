@@ -108,7 +108,7 @@ def check_credentials(username, password):
         if 'Item' in response:
             user = response['Item']
             input_hash = hash_password(password)
-            if user['password'] == password:
+            if user['password'] == input_hash:
                 return user['role'], user.get('history', []), user.get('employee_id', 'Unknown')
     except Exception as e:
         st.error(f"DB Error: {e}")
