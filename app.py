@@ -6,8 +6,8 @@ import hashlib
 import os
 
 # --- AWS CONFIGURATION ---
-KB_ID = "RZPCGWVTQX" 
-SNS_TOPIC_ARN = "arn:aws:sns:us-east-1:375756730751:RagAccessRequests"
+KB_ID = "RZPCGGHJGJFYQX" 
+SNS_TOPIC_ARN = "arn:aws:sns:us-east-1:123456:RagAccessRequests"
 USER_TABLE_NAME = "rag_users"
 CACHE_TABLE_NAME = "rag_cache"
 REGION = "us-east-1"
