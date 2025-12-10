@@ -7,8 +7,8 @@ from presidio_anonymizer import AnonymizerEngine
 from presidio_anonymizer.entities import OperatorConfig
 
 # --- AWS CONFIGURATION ---
-KB_ID = "RZPCGWVTQX" 
-BUCKET_NAME = "rag-source-harsha-2025"
+KB_ID = "RZHJIOOHVTQX" 
+BUCKET_NAME = "rag-source-your_name-2025"
 CACHE_TABLE_NAME = "rag_cache"
 REGION = "us-east-1"
 
